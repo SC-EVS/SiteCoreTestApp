@@ -37,6 +37,7 @@ namespace SiteCoreTestTask.Controllers
             bool eachWordOnPageInMetaTags = false,
             bool externalLinks = false)
         {
+            ViewData["StopWords"] = RegexpParser.stopWords;
             IGetText getText;
             string currentDomain;
             string text = "";
