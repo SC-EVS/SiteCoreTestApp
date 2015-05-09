@@ -20,7 +20,7 @@ namespace SiteCoreTestTask.Controllers
         public ActionResult Index(IList<string> stopWordsOnPage, IList<string> stopWordsInMeta, List<string> externalLinks)
         {
             ViewData["Message"] = "My rocking test app!";
-
+            ViewData["StopWords"] = RegexpParser.stopWords;
             return View();
         }
 

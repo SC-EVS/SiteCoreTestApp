@@ -7,6 +7,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2>
         <%: ViewData["Message"] %></h2>
+         <% IList<string> stopWords = ViewData["StopWords"] as IList<string>;%>
+
+        Стоп-слова:
+    <% foreach (string sw in stopWords)
+       { %>
+       <%= sw %>
+    <%  } %>
+
     <form action="<%= Url.Action("SeoAnalysis","Home") %>" method="post" align="center">
     Введите сюда текст, либо URL:
     <br />

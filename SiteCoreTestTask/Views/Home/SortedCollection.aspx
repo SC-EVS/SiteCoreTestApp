@@ -6,13 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-     <%--<%if (Model != null && Model.Count()!=0)
-      {%>
-    <% foreach (KeyValuePair<string, int> kvp in Model)
-       { %>
-       <%= kvp.Key%>  <%= kvp.Value%>
-    <%  } %>
-    <%} %>--%>
+
 
   <% if (Model != null)
      {%>  
