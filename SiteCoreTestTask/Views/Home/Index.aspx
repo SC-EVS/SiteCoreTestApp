@@ -11,7 +11,7 @@
     Введите сюда текст, либо URL:
     <br />
     <textarea rows="10" cols="60" name="textOrUrl"> </textarea><br />
-    <input id="eachWordOnPage" type="checkbox" value="true" name="eachWordOnPage" />каждое
+    <input id="eachWordOnPage" type="checkbox" value="true" name="eachWordOnPage" checked="checked" />каждое
     стоп-слово на странице
     <br />
     <input type="hidden" value="false" name="eachWordOnPage" />
